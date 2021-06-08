@@ -1,7 +1,7 @@
 import React from "react";
-import { useSelector } from 'react-redux';
-import { BrowserRouter, Link, Route } from 'react-router-dom';
-import CartScreen from './screens/CartScreen';
+import { useSelector } from "react-redux";
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import CartScreen from "./screens/CartScreen";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 
@@ -15,7 +15,7 @@ function App() {
         <header className="row">
           <div>
             <Link className="brand" to="/">
-              nature's wondergir
+              Nature's Wonder
             </Link>
           </div>
           <div>
@@ -33,7 +33,7 @@ function App() {
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved</footer>
+        <footer className="row center">All right reserved 2021</footer>
       </div>
     </BrowserRouter>
   );
